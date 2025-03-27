@@ -1,32 +1,56 @@
 'use client';
 
+import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
-import React, { useState } from 'react';
 import { GiHamburgerMenu } from 'react-icons/gi';
+import { IoClose } from 'react-icons/io5';
 import styles from './header.module.css';
 
 const Header = () => {
   const [isMobileOpen, setIsMobileOpen] = useState(false);
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false); // Stan rozwijanego dropdownu
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [isVideoDropdownOpen, setIsVideoDropdownOpen] = useState(false);
+  const mobileMenuRef = useRef<HTMLDivElement | null>(null);
+  const videoDropdownRef = useRef<HTMLUListElement | null>(null);
 
   const toggleMobileMenu = () => {
     setIsMobileOpen((prevState) => !prevState);
   };
 
-  const toggleDropdown = () => {
-    setIsDropdownOpen((prevState) => !prevState); // Toggle dla rozwijanego menu
+  const toggleVideoDropdown = () => {
+    setIsVideoDropdownOpen((prevState) => !prevState);
   };
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (
+        mobileMenuRef.current &&
+        !mobileMenuRef.current.contains(event.target as Node)
+      ) {
+        setIsMobileOpen(false);
+      }
+
+      if (
+        videoDropdownRef.current &&
+        !videoDropdownRef.current.contains(event.target as Node)
+      ) {
+        setIsVideoDropdownOpen(false);
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, []);
 
   return (
     <header className={styles.header}>
       <Link href='/'>
         <div>
           <h1 className={styles.title}>MARCIN PUCIEK</h1>
-          <p>MODEL & PHOTOMODEL</p>
+          <p>MODEL&PHOTOMODEL</p>
         </div>
       </Link>
       <nav>
-        {/* Desktopowe menu */}
         <div className={styles.desktopNav}>
           <ul className={styles.menu}>
             <li>
@@ -35,7 +59,6 @@ const Header = () => {
             <li>
               <Link href='/portfolio'>Portfolio</Link>
             </li>
-            {/* Video dropdown */}
             <li
               className={styles.dropdown}
               onMouseEnter={() => setIsDropdownOpen(true)}
@@ -61,13 +84,12 @@ const Header = () => {
           </ul>
         </div>
 
-        {/* Ikona hamburgera */}
         <div className={styles.hamburger} onClick={toggleMobileMenu}>
-          <GiHamburgerMenu />
+          {isMobileOpen ? <IoClose /> : <GiHamburgerMenu />}
         </div>
 
-        {/* Nawigacja mobilna */}
         <div
+          ref={mobileMenuRef}
           className={`${styles.mobileNav} ${isMobileOpen ? styles.open : ''}`}
         >
           <ul className={styles.mobileMenu}>
@@ -77,14 +99,10 @@ const Header = () => {
             <li>
               <Link href='/portfolio'>Portfolio</Link>
             </li>
-            <li>
-              <Link href='/kontakt'>Kontakt</Link>
-            </li>
-            {/* Video dropdown w menu mobilnym */}
-            <li onClick={toggleDropdown} className={styles.video}>
+            <li onClick={toggleVideoDropdown} className={styles.video}>
               <Link href='#'>Video</Link>
-              {isDropdownOpen && (
-                <ul className={styles.mobileDropdown}>
+              {isVideoDropdownOpen && (
+                <ul ref={videoDropdownRef} className={styles.mobileDropdown}>
                   <li>
                     <Link href='/video/reklamy'>Reklamy</Link>
                   </li>
@@ -93,6 +111,9 @@ const Header = () => {
                   </li>
                 </ul>
               )}
+            </li>
+            <li>
+              <Link href='/kontakt'>Kontakt</Link>
             </li>
           </ul>
         </div>
