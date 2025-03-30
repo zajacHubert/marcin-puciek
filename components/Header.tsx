@@ -17,6 +17,10 @@ const Header = () => {
     setIsMobileOpen((prevState) => !prevState);
   };
 
+  const closeMenuMobile = () => {
+    setIsMobileOpen(false);
+  };
+
   const toggleVideoDropdown = () => {
     setIsVideoDropdownOpen((prevState) => !prevState);
   };
@@ -27,6 +31,7 @@ const Header = () => {
         mobileMenuRef.current &&
         !mobileMenuRef.current.contains(event.target as Node)
       ) {
+        console.log('here2');
         setIsMobileOpen(false);
       }
 
@@ -34,6 +39,7 @@ const Header = () => {
         videoDropdownRef.current &&
         !videoDropdownRef.current.contains(event.target as Node)
       ) {
+        console.log('here');
         setIsVideoDropdownOpen(false);
       }
     };
@@ -94,26 +100,36 @@ const Header = () => {
         >
           <ul className={styles.mobileMenu}>
             <li>
-              <Link href='/'>Start</Link>
+              <Link href='/' onClick={closeMenuMobile}>
+                Start
+              </Link>
             </li>
             <li>
-              <Link href='/portfolio'>Portfolio</Link>
+              <Link href='/portfolio' onClick={closeMenuMobile}>
+                Portfolio
+              </Link>
             </li>
             <li onClick={toggleVideoDropdown} className={styles.video}>
               <Link href='#'>Video</Link>
               {isVideoDropdownOpen && (
                 <ul ref={videoDropdownRef} className={styles.mobileDropdown}>
                   <li>
-                    <Link href='/video/reklamy'>Reklamy</Link>
+                    <Link href='/video/reklamy' onClick={closeMenuMobile}>
+                      Reklamy
+                    </Link>
                   </li>
                   <li>
-                    <Link href='/video/teledyski'>Teledyski</Link>
+                    <Link href='/video/teledyski' onClick={closeMenuMobile}>
+                      Teledyski
+                    </Link>
                   </li>
                 </ul>
               )}
             </li>
             <li>
-              <Link href='/kontakt'>Kontakt</Link>
+              <Link href='/kontakt' onClick={closeMenuMobile}>
+                Kontakt
+              </Link>
             </li>
           </ul>
         </div>

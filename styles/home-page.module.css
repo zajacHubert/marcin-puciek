@@ -1,0 +1,70 @@
+.heroSection {
+  margin-bottom: 3rem;
+}
+
+.subtitle {
+  font-size: clamp(1.25rem, 1.1543rem + 0.4255vw, 1.5rem);
+  font-weight: 500;
+  font-family: 'Montserrat Alternates', sans-serif;
+  margin-bottom: 0.5rem;
+}
+
+.pTtitle {
+  font-size: clamp(1rem, 0.8085rem + 0.8511vw, 1.5rem);
+  font-weight: 300;
+  margin-bottom: 1.5rem;
+}
+
+.pRow {
+  margin-bottom: 1rem;
+  font-weight: 400;
+  font-size: clamp(0.875rem, 0.7553rem + 0.5319vw, 1.1875rem);
+}
+
+.dimensionsSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  gap: 1.5rem;
+}
+
+.contentBox {
+  width: min(45%, 32.8125rem);
+}
+
+.contentBox img {
+  max-height: 37.5rem;
+}
+
+.about {
+  margin: 4rem auto;
+  max-width: min(90%, 70rem);
+  text-align: center;
+}
+
+.aboutSubtitle {
+  font-size: clamp(1.25rem, 1.1543rem + 0.4255vw, 1.5rem);
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.aboutP {
+  font-size: clamp(0.875rem, 0.8271rem + 0.2128vw, 1rem);
+  line-height: 2;
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .dimensionsSection {
+    flex-direction: column;
+  }
+
+  .contentBox:first-of-type h2,
+  .contentBox:first-of-type p {
+    text-align: center;
+  }
+  .contentBox {
+    width: 80%;
+  }
+}
