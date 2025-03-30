@@ -1,0 +1,42 @@
+.footer {
+  border: 1px dotted #d6d6d6;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: min(93.75rem, 90%);
+  margin: 0 auto;
+  font-weight: 300;
+  padding-block: 2rem;
+}
+
+.iconsBox {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* .link {
+  transition: 0.3s;
+  color: #00000052;
+}
+
+.link:hover svg {
+  color: rgba(0, 0, 0, 0.32) !important;
+} */
+
+.link {
+  display: inline-flex;
+  transition: color 0.3s ease;
+}
+
+.link svg {
+  color: rgba(0, 0, 0, 0.32);
+  transition: color 0.3s ease;
+}
+
+.link:hover svg {
+  color: rgba(0, 0, 0, 1);
+}

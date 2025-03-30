@@ -1,0 +1,16 @@
+.portfolioSection {
+  width: min(90%, 50rem);
+  margin: 0 auto;
+}
+
+.subtitle {
+  font-size: clamp(1.25rem, 1.1543rem + 0.4255vw, 1.5rem);
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.categoryBox {
+  max-height: 31.25rem;
+  margin-bottom: 3rem;
+}

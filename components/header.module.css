@@ -11,10 +11,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: min(93.75rem, 100%);
+  width: min(93.75rem, 90%);
   margin: 0 auto;
   height: 5rem;
-  padding: 0 1.5rem;
   background-color: #fff;
 }
 
@@ -43,6 +42,10 @@
 .menu li {
   position: relative;
   font-size: 1rem;
+}
+
+.menu li:hover {
+  color: #7a7a7a;
 }
 
 .dropdownMenu {
