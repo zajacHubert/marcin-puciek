@@ -15,7 +15,7 @@ const MainSlider = () => {
     <>
       <Swiper
         spaceBetween={30}
-        centeredSlides={true}
+        centeredSlides
         autoplay={{
           delay: 2500,
           disableOnInteraction: false,

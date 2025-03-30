@@ -31,7 +31,6 @@ const Header = () => {
         mobileMenuRef.current &&
         !mobileMenuRef.current.contains(event.target as Node)
       ) {
-        console.log('here2');
         setIsMobileOpen(false);
       }
 
@@ -39,7 +38,6 @@ const Header = () => {
         videoDropdownRef.current &&
         !videoDropdownRef.current.contains(event.target as Node)
       ) {
-        console.log('here');
         setIsVideoDropdownOpen(false);
       }
     };
