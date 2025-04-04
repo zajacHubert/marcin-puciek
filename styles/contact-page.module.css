@@ -1,0 +1,65 @@
+.sectionContact {
+  margin-bottom: 3rem;
+}
+
+.subtitle {
+  font-size: clamp(1.25rem, 1.1543rem + 0.4255vw, 1.5rem);
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.contentBox {
+  width: min(45%, 32.8125rem);
+}
+
+.p {
+  font-size: clamp(0.875rem, 0.7314rem + 0.6383vw, 1.25rem);
+  line-height: 2;
+  margin-bottom: 0.5rem;
+}
+
+.iconsBox {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.iconsBox svg {
+  color: rgba(0, 0, 0, 1);
+  transition: color 0.3s ease;
+  font-size: 3rem;
+}
+
+.iconsBox a {
+  display: inline-block;
+}
+
+.iconsBox a:hover svg {
+  color: rgba(0, 0, 0, 0.32);
+}
+
+.iconsBox {
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .contentBox {
+    width: 90%;
+  }
+
+  .p {
+    text-align: center;
+  }
+}

@@ -1,0 +1,97 @@
+.formContainer {
+  width: min(34.375rem, 90%);
+  margin: 0 auto 3rem;
+}
+
+.formTitle {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  color: #333;
+  font-size: 1.75rem;
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  position: relative;
+}
+
+.input,
+.textarea {
+  padding: 0.75rem;
+  border: 1px solid #000;
+  font-size: 1rem;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.input:focus,
+.textarea:focus {
+  outline: none;
+  border-color: #4a90e2;
+  box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.2);
+}
+
+.textarea {
+  resize: vertical;
+  min-height: 7.5rem;
+}
+
+.errorMessage {
+  position: absolute;
+  color: #e53e3e;
+  font-size: 0.85rem;
+  bottom: -1.25rem;
+  left: 0;
+}
+
+.submitButton {
+  background-color: #000;
+  color: white;
+  border: none;
+  padding: 0.85rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  margin-top: 0.5rem;
+  position: relative;
+  height: 3em;
+}
+
+.submitButton:hover {
+  background-color: #a0aec0;
+}
+
+.submitButton:disabled {
+  background-color: #a0aec0;
+  cursor: not-allowed;
+}
+
+.successMessage {
+  background-color: #48bb78;
+  color: white;
+  padding: 1rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

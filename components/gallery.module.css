@@ -1,0 +1,47 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15.625rem, 25rem));
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.imageWrapper {
+  position: relative;
+  aspect-ratio: 480/640;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.image {
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.imageWrapper:hover .image {
+  transform: scale(1.05);
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: all 0.3s ease;
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.imageWrapper:hover .overlay {
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 1;
+}
+
+.title {
+  z-index: 1;
+}
