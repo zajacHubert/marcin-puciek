@@ -27,7 +27,7 @@ const MainSlider = () => {
       >
         {mainSlides.map((slide) => (
           <SwiperSlide key={slide.id}>
-            <Image src={slide.img} alt='picture' />
+            <Image src={slide.img} alt='picture' fill />
           </SwiperSlide>
         ))}
       </Swiper>

@@ -1,6 +1,22 @@
-.portfolioSection {
-  width: min(90%, 50rem);
-  margin: 0 auto;
+.portfolioContainer {
+  width: min(90%, 93.75rem);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin: 8rem auto 3rem;
+}
+
+.content:hover .categoryBox {
+  opacity: 0.6;
+}
+
+.categoryBox {
+  position: relative;
+  height: 30rem;
+  margin-bottom: 3rem;
+  width: 20rem;
+  overflow: hidden;
 }
 
 .subtitle {
@@ -10,7 +26,8 @@
   margin-bottom: 1rem;
 }
 
-.categoryBox {
-  max-height: 31.25rem;
-  margin-bottom: 3rem;
+@media (max-width: 1200px) {
+  .portfolioContainer {
+    justify-content: center;
+  }
 }

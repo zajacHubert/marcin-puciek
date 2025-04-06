@@ -38,13 +38,24 @@ const ContactForm: React.FC = () => {
     values: ContactFormValues,
     { setSubmitting, resetForm, setStatus }: FormikHelpers<ContactFormValues>
   ) => {
+    console.log('here1');
     try {
-      console.log('Dane formularza:', values);
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(values),
+      });
 
-      await new Promise((resolve) => setTimeout(resolve, 1000));
+      const data = await res.json();
 
-      resetForm();
-      setStatus({ success: true });
+      if (data.success) {
+        resetForm();
+        setStatus({ success: true });
+      } else {
+        setStatus({ success: false });
+      }
     } catch (error) {
       console.error('Błąd wysyłania formularza:', error);
       setStatus({ success: false });
