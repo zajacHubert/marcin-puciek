@@ -1,13 +1,13 @@
 'use client';
 
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 import { useState } from 'react';
 import Lightbox from 'yet-another-react-lightbox';
 import 'yet-another-react-lightbox/styles.css';
 import styles from './gallery.module.css';
 
 interface GalleryProps {
-  images: { src: string; title: string }[];
+  images: { src: string; id: number; img: StaticImageData }[];
 }
 
 const Gallery = ({ images }: GalleryProps) => {
@@ -23,14 +23,11 @@ const Gallery = ({ images }: GalleryProps) => {
         >
           <Image
             src={img.src}
-            alt={img.title}
+            alt='photo'
             fill
             sizes='(max-width: 768px) 100vw, 33vw'
             className={styles.image}
           />
-          <div className={styles.overlay}>
-            <span className={styles.title}>{img.title}</span>
-          </div>
         </div>
       ))}
 
