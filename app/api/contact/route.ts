@@ -1,7 +1,6 @@
 import nodemailer from 'nodemailer';
 
 export async function POST(req: Request) {
-  console.log('here');
   try {
     const { name, email, message } = await req.json();
 
@@ -12,8 +11,6 @@ export async function POST(req: Request) {
         pass: process.env.GMAIL_PASS,
       },
     });
-
-    console.log('!!', { name, email, message, test: process.env.GMAIL_USER });
 
     const mailOptions = {
       from: email,
