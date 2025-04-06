@@ -11,7 +11,7 @@ import img9 from '@/public/images/portfolio/sport/img9.jpg';
 import img10 from '@/public/images/portfolio/sport/img10.jpg';
 import img11 from '@/public/images/portfolio/sport/img11.jpg';
 import img12 from '@/public/images/portfolio/sport/img12.jpg';
-import img13 from '@/public/images/portfolio/sport/img13.jpg';
+import img13 from '@/public/images/portfolio/sport/img13.jpeg';
 import img14 from '@/public/images/portfolio/sport/img14.jpg';
 import img15 from '@/public/images/portfolio/sport/img15.jpg';
 import img16 from '@/public/images/portfolio/sport/img16.jpg';

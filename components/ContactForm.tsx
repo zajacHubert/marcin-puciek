@@ -1,6 +1,6 @@
 'use client';
 
-import React from 'react';
+import React, { useState } from 'react';
 import { Formik, Form, Field, ErrorMessage, FormikHelpers } from 'formik';
 import * as Yup from 'yup';
 import styles from './contactForm.module.css';
@@ -34,12 +34,13 @@ const validationSchema = Yup.object({
 });
 
 const ContactForm: React.FC = () => {
+  const [success, setSuccess] = useState<boolean | null>(null);
   const handleSubmit = async (
     values: ContactFormValues,
-    { setSubmitting, resetForm, setStatus }: FormikHelpers<ContactFormValues>
+    { setSubmitting, resetForm }: FormikHelpers<ContactFormValues>
   ) => {
-    console.log('here1');
     try {
+      setSuccess(null);
       const res = await fetch('/api/contact', {
         method: 'POST',
         headers: {
@@ -50,15 +51,17 @@ const ContactForm: React.FC = () => {
 
       const data = await res.json();
 
+      console.log('!!data', data);
+
       if (data.success) {
         resetForm();
-        setStatus({ success: true });
+        setSuccess(true);
       } else {
-        setStatus({ success: false });
+        setSuccess(false);
       }
     } catch (error) {
       console.error('Błąd wysyłania formularza:', error);
-      setStatus({ success: false });
+      setSuccess(false);
     } finally {
       setSubmitting(false);
     }
@@ -73,12 +76,14 @@ const ContactForm: React.FC = () => {
         validationSchema={validationSchema}
         onSubmit={handleSubmit}
       >
-        {({ isSubmitting, status }) => (
+        {({ isSubmitting }) => (
           <Form className={styles.form}>
-            {status?.success && (
-              <div className={styles.successMessage}>
-                Dziękujemy! Twoja wiadomość została wysłana.
-              </div>
+            {success && (
+              <p className={styles.successMessage}>Wysłano wiadomość!</p>
+            )}
+
+            {success === false && (
+              <p className={styles.errorSubmit}>Błąd wysłania formularza</p>
             )}
 
             <div className={styles.formGroup}>

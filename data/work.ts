@@ -9,7 +9,7 @@ import img7 from '@/public/images/portfolio/work/img7.jpg';
 import img8 from '@/public/images/portfolio/work/img8.jpg';
 import img9 from '@/public/images/portfolio/work/img9.jpg';
 import img10 from '@/public/images/portfolio/work/img10.jpg';
-import img11 from '@/public/images/portfolio/work/img11.jpg';
+import img11 from '@/public/images/portfolio/work/img11.png';
 import img12 from '@/public/images/portfolio/work/img12.jpg';
 import img13 from '@/public/images/portfolio/work/img13.jpg';
 import img14 from '@/public/images/portfolio/work/img14.jpg';

@@ -1,4 +1,4 @@
-import img from '../../public/placeholder.png';
+import img from '@/public/images/contact/img.jpg';
 import Image from 'next/image';
 import styles from '../../styles/contact-page.module.css';
 import { MdMailOutline } from 'react-icons/md';

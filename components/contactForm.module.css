@@ -1,6 +1,8 @@
 .formContainer {
   width: min(34.375rem, 90%);
   margin: 0 auto 3rem;
+  position: relative;
+  padding-bottom: 3rem;
 }
 
 .formTitle {
@@ -76,13 +78,23 @@
 }
 
 .successMessage {
-  background-color: #48bb78;
-  color: white;
-  padding: 1rem;
-  border-radius: 4px;
-  margin-bottom: 1rem;
+  color: #48bb78;
+  position: absolute;
   font-weight: 500;
-  animation: fadeIn 0.5s;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.errorSubmit {
+  color: #e53e3e;
+  position: absolute;
+  font-weight: 500;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
 }
 
 @keyframes fadeIn {

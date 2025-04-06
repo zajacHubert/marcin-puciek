@@ -1,6 +1,6 @@
 import MainSlider from '@/components/MainSlider';
 import styles from '../styles/home-page.module.css';
-import heroImg from '../public/placeholder.png';
+import heroImg from '@/public/images/dimensions/img17.jpg';
 import Image from 'next/image';
 
 const HomePage = () => {
@@ -12,7 +12,7 @@ const HomePage = () => {
       <section className={styles.dimensionsSection}>
         <div className={styles.contentBox}>
           <h2 className={styles.subtitle}>Marcin Puciek</h2>
-          <p className={styles.pTtitle}>MODEL&PHOTOMODEL</p>
+          <p className={styles.pTtitle}>MODEL&COMMERCIAL ACTOR</p>
           <p className={styles.pRow}>Doświadcznie: 10lat</p>
           <p className={styles.pRow}>Wzrost: 185cm</p>
           <p className={styles.pRow}>Waga: 95kg</p>

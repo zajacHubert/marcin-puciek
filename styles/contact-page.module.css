@@ -19,6 +19,11 @@
 
 .contentBox {
   width: min(45%, 32.8125rem);
+  max-height: 37.5rem;
+}
+
+.contentBox img {
+  max-height: 37.5rem;
 }
 
 .p {

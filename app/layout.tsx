@@ -18,7 +18,7 @@ const montserratAlternates = Montserrat_Alternates({
 
 export const metadata: Metadata = {
   title: 'Marcin Puciek',
-  description: 'Model & photomodel',
+  description: 'Model & commercial actor',
 };
 
 export default function RootLayout({
