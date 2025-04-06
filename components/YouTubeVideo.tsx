@@ -92,7 +92,6 @@ const YouTubeVideo: React.FC<YouTubeVideoProps> = ({
           height={height}
           width={width}
           params={params}
-          onLoad={() => setIsLoading(false)}
         />
       </div>
     </div>
