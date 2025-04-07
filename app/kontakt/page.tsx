@@ -34,14 +34,11 @@ const ContactPage = () => {
           <a href='mailto:marcin.puciek88@gmail.com?subject=Zapytanie%20o%20współpracę'>
             <MdMailOutline />
           </a>
-          <a
-            href='https://www.youtube.com/watch?v=bM4xWww5yag&ab_channel=PrzewodnikTV'
-            target='_blank'
-          >
+          <a href='https://www.facebook.com/share/16JJZE2SHg/' target='_blank'>
             <FaFacebook />
           </a>
           <a
-            href='https://www.youtube.com/watch?v=bM4xWww5yag&ab_channel=PrzewodnikTV'
+            href='https://www.instagram.com/m.puciek?igsh=MWJxdzJ0bGF5anhwOQ=='
             target='_blank'
           >
             <CiInstagram />

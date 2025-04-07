@@ -14,12 +14,11 @@ export async function POST(req: Request) {
 
     const mailOptions = {
       from: email,
-      to: process.env.GMAIL_USER,
+      to: 'marcin.puciek88@gmail.com',
       subject: `Wiadomość ze strony`,
       text: `Imię: ${name}\nEmail: ${email}\n\nWiadomość:\n${message}`,
     };
 
-    // Wysłanie wiadomości
     await transporter.sendMail(mailOptions);
 
     return new Response(JSON.stringify({ success: true }), { status: 200 });

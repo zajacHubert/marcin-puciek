@@ -10,14 +10,14 @@ const Footer = () => {
         <div className={styles.iconsBox}>
           <a
             className={styles.link}
-            href='https://www.youtube.com/watch?v=bM4xWww5yag&ab_channel=PrzewodnikTV'
+            href='https://www.facebook.com/share/16JJZE2SHg/'
             target='_blank'
           >
             <FaFacebookF size={18} />
           </a>
           <a
             className={styles.link}
-            href='https://www.youtube.com/watch?v=bM4xWww5yag&ab_channel=PrzewodnikTV'
+            href='https://www.instagram.com/m.puciek?igsh=MWJxdzJ0bGF5anhwOQ=='
             target='_blank'
           >
             <CiInstagram size={24} />

@@ -1,14 +1,17 @@
-import { YouTubeEmbed } from '@next/third-parties/google';
-import React from 'react';
+import YouTubeVideo from '@/components/YouTubeVideo';
+import { advertisements } from '@/data/advertisements';
+import styles from '@/styles/video-page.module.css';
 
 const AdvertisementsPage = () => {
   return (
-    <section>
-      <h2>Reklamy</h2>
-      <div>
-        <div>
-          <YouTubeEmbed videoid='bM4xWww5yag' params='controls=1&width=100%' />
-        </div>
+    <section className={styles.videoSection}>
+      <h2 className={styles.title}>Reklamy</h2>
+      <div className={styles.container}>
+        {advertisements.map((advertisement) => (
+          <div key={advertisement.id} className={styles.videoBox}>
+            <YouTubeVideo id={advertisement.id} />
+          </div>
+        ))}
       </div>
     </section>
   );

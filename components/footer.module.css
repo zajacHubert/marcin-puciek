@@ -1,5 +1,5 @@
 .footer {
-  border: 1px dotted #d6d6d6;
+  border-top: 1px dotted #d6d6d6;
 }
 
 .container {
@@ -17,15 +17,6 @@
   align-items: center;
   gap: 1rem;
 }
-
-/* .link {
-  transition: 0.3s;
-  color: #00000052;
-}
-
-.link:hover svg {
-  color: rgba(0, 0, 0, 0.32) !important;
-} */
 
 .link {
   display: inline-flex;

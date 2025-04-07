@@ -1,0 +1,39 @@
+.title {
+  font-size: clamp(1.25rem, 1.1543rem + 0.4255vw, 1.5rem);
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.videoSection {
+  width: min(93.75rem, 90%);
+  margin: 0 auto 3rem;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.videoBox {
+  width: 30%;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 1200px) {
+  .videoBox {
+    width: 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    justify-content: center;
+  }
+
+  .videoBox {
+    width: min(90%, 25rem);
+  }
+}

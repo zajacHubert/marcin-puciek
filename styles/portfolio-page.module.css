@@ -1,5 +1,5 @@
 .portfolioContainer {
-  width: min(90%, 93.75rem);
+  width: min(93.75rem, 90%);
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;

@@ -13,11 +13,14 @@ const HomePage = () => {
         <div className={styles.contentBox}>
           <h2 className={styles.subtitle}>Marcin Puciek</h2>
           <p className={styles.pTtitle}>MODEL&COMMERCIAL ACTOR</p>
-          <p className={styles.pRow}>Doświadcznie: 10lat</p>
           <p className={styles.pRow}>Wzrost: 185cm</p>
-          <p className={styles.pRow}>Waga: 95kg</p>
-          <p className={styles.pRow}>Kolor włosów: blond</p>
-          <p className={styles.pRow}>Penis: mocne 13cm</p>
+          <p className={styles.pRow}>Klatka piersiowa: 108cm</p>
+          <p className={styles.pRow}>Pas: 96cm</p>
+          <p className={styles.pRow}>Biodra: 110cm</p>
+          <p className={styles.pRow}>Obwód głowy: 57cm</p>
+          <p className={styles.pRow}>Kołnierz: 43cm</p>
+          <p className={styles.pRow}>Rozmiar buta: 45</p>
+          <p className={styles.pRow}>Rozmiar ubrania: L</p>
         </div>
         <div className={styles.contentBox}>
           <Image src={heroImg} alt='model' />

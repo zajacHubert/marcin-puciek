@@ -1,6 +1,6 @@
 .portfolioCategory {
-  width: 90%;
-  margin: 0 auto;
+  width: min(93.75rem, 90%);
+  margin: 0 auto 3rem;
 }
 
 .title {

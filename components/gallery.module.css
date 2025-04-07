@@ -1,9 +1,8 @@
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(15.625rem, 25rem));
-  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 20rem));
+  justify-content: space-between;
   gap: 1rem;
-  padding: 1rem;
 }
 
 .imageWrapper {
@@ -44,4 +43,10 @@
 
 .title {
   z-index: 1;
+}
+
+@media (max-width: 1120px) {
+  .grid {
+    justify-content: center;
+  }
 }
