@@ -12,28 +12,16 @@
 }
 
 .container {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.videoBox {
-  width: 30%;
-  margin-bottom: 2rem;
-}
-
-@media (max-width: 1200px) {
-  .videoBox {
-    width: 45%;
-  }
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+  gap: 2rem;
+  justify-content: center;
 }
 
 @media (max-width: 768px) {
-  .container {
-    justify-content: center;
-  }
-
-  .videoBox {
-    width: min(90%, 25rem);
+  @media (max-width: 768px) {
+    .container {
+      grid-template-columns: 1fr;
+    }
   }
 }
