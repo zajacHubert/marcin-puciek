@@ -1,29 +1,68 @@
 export const advertisements: { id: string }[] = [
   {
-    id: 'bM4xWww5yag',
+    id: 'OBwTsFm0t5Y',
   },
   {
-    id: 'q6idj8bMeCc',
+    id: '28qqi3pqDsU',
   },
   {
-    id: '8gXlJHcPfmM',
+    id: 'SuFQtC15Grw',
   },
   {
-    id: 'eHNIrJOZXhA',
+    id: '9luz2enTArI',
   },
   {
-    id: '_-FnldV5BFU',
+    id: '98_RJWyUXwA',
   },
   {
-    id: 'FhgesmGUvfk',
+    id: 'gAeFIKR8SZ4',
   },
   {
-    id: 'hOFnYZ_0Pco',
+    id: 'jgbvBNvHk_4',
   },
   {
-    id: 't4byHlsKpps',
+    id: 'tzArFcSjupQ',
   },
   {
-    id: 'rCyd3ZJCP38',
+    id: 'qBfyEiZo67Q',
+  },
+  {
+    id: 'SuFQtC15Grw',
+  },
+  {
+    id: 'JDUnmqNiPis',
+  },
+  {
+    id: '0OFmAxZ8d_o',
+  },
+  {
+    id: 'flOuU4-mLt4',
+  },
+  {
+    id: 'nUONEovB7DQ',
+  },
+  {
+    id: 'M2qSovNxetg',
+  },
+  {
+    id: 'l4i0iLaV9T0',
+  },
+  {
+    id: 'br5fSmGxioM',
+  },
+  {
+    id: 'Z6qDeXbYa-U',
+  },
+  {
+    id: 'k9Idqdzfnho',
+  },
+  {
+    id: '5DL1_xevYfI',
+  },
+  {
+    id: '6xNe3_DbWnU',
+  },
+  {
+    id: 'qBfyEiZo67Q',
   },
 ];
