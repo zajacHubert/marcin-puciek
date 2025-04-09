@@ -62,7 +62,4 @@ export const advertisements: { id: string }[] = [
   {
     id: '6xNe3_DbWnU',
   },
-  {
-    id: 'qBfyEiZo67Q',
-  },
 ];
