@@ -76,7 +76,7 @@ const Header = () => {
                   }`}
                 >
                   <li>
-                    <Link href='/video/reklamy'>Reklamy</Link>
+                    <Link href='/video/spoty'>Reklamy</Link>
                   </li>
                   <li>
                     <Link href='/video/teledyski'>Teledyski</Link>
@@ -113,7 +113,7 @@ const Header = () => {
                 {isVideoDropdownOpen && (
                   <ul ref={videoDropdownRef} className={styles.mobileDropdown}>
                     <li>
-                      <Link href='/video/reklamy' onClick={closeMenuMobile}>
+                      <Link href='/video/spoty' onClick={closeMenuMobile}>
                         Reklamy
                       </Link>
                     </li>
