@@ -3,19 +3,17 @@ import Pagination from '@/components/Pagination';
 import { musicVideos } from '@/data/musicVideos';
 import styles from '@/styles/video-page.module.css';
 
-interface SearchParams {
-  searchParams?: {
-    page?: string;
-  };
-}
-
 const ITEMS_PER_PAGE = 10;
 
-const MusicVideoPage = ({ searchParams }: SearchParams) => {
-  const page = Math.max(1, parseInt(searchParams?.page ?? '1', 10));
+const MusicVideoPage = async ({
+  searchParams,
+}: {
+  searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
+}) => {
+  const { page = '1' } = await searchParams;
   const totalPages = Math.ceil(musicVideos.length / ITEMS_PER_PAGE);
 
-  const startIndex = (page - 1) * ITEMS_PER_PAGE;
+  const startIndex = (Number(page) - 1) * ITEMS_PER_PAGE;
   const endIndex = startIndex + ITEMS_PER_PAGE;
   const videos = musicVideos.slice(startIndex, endIndex);
 

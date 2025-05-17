@@ -5,19 +5,17 @@ import { advertisements } from '@/data/advertisements';
 // import { customAdvertisements } from '@/data/customAdvertisements';
 import styles from '@/styles/video-page.module.css';
 
-interface PageProps {
-  searchParams?: {
-    page?: string;
-  };
-}
-
 const ITEMS_PER_PAGE = 10;
 
-const AdvertisementsPage = ({ searchParams }: PageProps) => {
-  const page = Math.max(1, parseInt(searchParams?.page ?? '1', 10));
+const AdvertisementsPage = async ({
+  searchParams,
+}: {
+  searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
+}) => {
+  const { page = '1' } = await searchParams;
   const totalPages = Math.ceil(advertisements.length / ITEMS_PER_PAGE);
 
-  const startIndex = (page - 1) * ITEMS_PER_PAGE;
+  const startIndex = (Number(page) - 1) * ITEMS_PER_PAGE;
   const endIndex = startIndex + ITEMS_PER_PAGE;
   const videos = advertisements.slice(startIndex, endIndex);
 
