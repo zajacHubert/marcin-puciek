@@ -37,7 +37,15 @@ img {
   height: auto;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 main {
+  flex: 1;
+  overflow: auto;
   margin-top: 5rem;
 }
 
