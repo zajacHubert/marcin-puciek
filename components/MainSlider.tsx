@@ -14,6 +14,7 @@ const MainSlider = () => {
   return (
     <>
       <Swiper
+        slidesPerView={1}
         spaceBetween={30}
         centeredSlides
         autoplay={{
@@ -24,6 +25,24 @@ const MainSlider = () => {
         navigation={true}
         modules={[Autoplay, Pagination, Navigation]}
         className='mySwiper'
+        breakpoints={{
+          '@0.00': {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
+          '@0.60': {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          '@1.20': {
+            slidesPerView: 3,
+            spaceBetween: 40,
+          },
+          '@1.60': {
+            slidesPerView: 4,
+            spaceBetween: 50,
+          },
+        }}
       >
         {mainSlides.map((slide) => (
           <SwiperSlide key={slide.id}>

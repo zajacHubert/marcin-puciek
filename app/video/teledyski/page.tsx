@@ -1,19 +1,40 @@
 import YouTubeVideo from '@/components/YouTubeVideo';
+import Pagination from '@/components/Pagination';
 import { musicVideos } from '@/data/musicVideos';
 import styles from '@/styles/video-page.module.css';
 
-const MusicVideoPage = () => {
+interface SearchParams {
+  searchParams: {
+    page?: string;
+  };
+}
+
+const ITEMS_PER_PAGE = 10;
+
+const MusicVideoPage = ({ searchParams }: SearchParams) => {
+  const page = Math.max(1, parseInt(searchParams.page ?? '1', 10));
+  const totalPages = Math.ceil(musicVideos.length / ITEMS_PER_PAGE);
+
+  const startIndex = (page - 1) * ITEMS_PER_PAGE;
+  const endIndex = startIndex + ITEMS_PER_PAGE;
+  const videos = musicVideos.slice(startIndex, endIndex);
+
   return (
-    <section className={styles.videoSection}>
-      <h2 className={styles.title}>Teledyski</h2>
-      <div className={styles.container}>
-        {musicVideos.map((video) => (
-          <div key={video.id} className={styles.videoBox}>
-            <YouTubeVideo id={video.id} />
-          </div>
-        ))}
-      </div>
-    </section>
+    <>
+      <section className={styles.videoSection}>
+        <h2 className={styles.title}>Teledyski</h2>
+        <div className={styles.container}>
+          {videos.map((video) => (
+            <div key={video.id} className={styles.videoBox}>
+              <YouTubeVideo id={video.id} />
+            </div>
+          ))}
+        </div>
+      </section>
+      <section>
+        <Pagination totalPages={totalPages} siblingCount={0} />
+      </section>
+    </>
   );
 };
 

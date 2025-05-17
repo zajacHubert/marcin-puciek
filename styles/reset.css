@@ -41,22 +41,17 @@ main {
   margin-top: 5rem;
 }
 
-.swiper-wrapper {
-  height: clamp(25rem, 15.4255rem + 42.5532vw, 50rem) !important;
-}
-
 .swiper-slide {
   position: relative !important;
   width: 100%;
-  height: auto;
-  max-height: 43.75rem;
-}
-
-.swiper-slide img {
-  object-fit: contain;
+  height: 40.625rem !important;
 }
 
 .swiper-button-prev,
 .swiper-button-next {
   color: #cdcdcd !important;
+}
+
+.bold {
+  font-weight: 600;
 }

@@ -17,6 +17,11 @@ import img15 from '@/public/images/portfolio/elegant/img15.jpg';
 import img16 from '@/public/images/portfolio/elegant/img16.jpg';
 import img17 from '@/public/images/portfolio/elegant/img17.jpg';
 import img18 from '@/public/images/portfolio/elegant/img18.jpg';
+import img19 from '@/public/images/portfolio/elegant/img19.jpg';
+import img20 from '@/public/images/portfolio/elegant/img20.jpg';
+import img21 from '@/public/images/portfolio/elegant/img21.jpg';
+import img22 from '@/public/images/portfolio/elegant/img22.jpg';
+import img23 from '@/public/images/portfolio/elegant/img23.jpg';
 
 export const elegantImages: {
   id: number;
@@ -112,5 +117,30 @@ export const elegantImages: {
     id: 18,
     img: img18,
     src: img18.src,
+  },
+  {
+    id: 19,
+    img: img19,
+    src: img19.src,
+  },
+  {
+    id: 20,
+    img: img20,
+    src: img20.src,
+  },
+  {
+    id: 21,
+    img: img21,
+    src: img21.src,
+  },
+  {
+    id: 22,
+    img: img22,
+    src: img22.src,
+  },
+  {
+    id: 23,
+    img: img23,
+    src: img23.src,
   },
 ];

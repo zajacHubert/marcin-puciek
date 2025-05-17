@@ -30,14 +30,18 @@ const HomePage = () => {
         <h2 className={styles.aboutSubtitle}>O mnie</h2>
         <p className={styles.aboutP}>
           Jestem fotomodelem i aktorem reklamowym z dużym doświadczeniem przed
-          kamerą i aparatem. Ukończyłem roczny kurs aktorski w Szkole
-          Artystycznej ROE, który pozwolił rozwinąć mój warsztat i swobodnie
-          odnajdywać się w różnorodnych produkcjach. Praca przed obiektywem to
-          na pewno jedna z moich pasji.
+          kamerą i aparatem. Ukończyłem roczny kurs aktorski w{' '}
+          <span className='bold'>Szkole Artystycznej ROE</span>, który pozwolił
+          rozwinąć mój warsztat i swobodnie odnajdywać się w różnorodnych
+          produkcjach. Praca przed obiektywem to na pewno jedna z moich pasji.
         </p>
         <p className={styles.aboutP}>
-          Miałem przyjemność brać udział w kampaniach reklamowy m.in. dla
-          T-Mobile, Sonko, Vifon, Smartney, Żabka, Betclic.
+          Miałem przyjemność brać udział w kampaniach reklamowy m.in. dla{' '}
+          <span className='bold'>
+            T-Mobile, Sonko, Vifon, Smartney, Żabka Jush, Soudal, Betclic,
+            Shoper, Suntago
+          </span>
+          .
         </p>
       </section>
     </>

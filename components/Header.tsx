@@ -52,7 +52,7 @@ const Header = () => {
         <Link href='/'>
           <div>
             <h1 className={styles.title}>MARCIN PUCIEK</h1>
-            <p>MODEL&COMMERCIAL ACTOR</p>
+            <p>PHOTOMODEL & COMMERCIAL ACTOR</p>
           </div>
         </Link>
         <nav>
