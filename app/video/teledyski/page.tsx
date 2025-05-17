@@ -4,7 +4,7 @@ import { musicVideos } from '@/data/musicVideos';
 import styles from '@/styles/video-page.module.css';
 
 interface SearchParams {
-  searchParams: {
+  searchParams?: {
     page?: string;
   };
 }
@@ -12,7 +12,7 @@ interface SearchParams {
 const ITEMS_PER_PAGE = 10;
 
 const MusicVideoPage = ({ searchParams }: SearchParams) => {
-  const page = Math.max(1, parseInt(searchParams.page ?? '1', 10));
+  const page = Math.max(1, parseInt(searchParams?.page ?? '1', 10));
   const totalPages = Math.ceil(musicVideos.length / ITEMS_PER_PAGE);
 
   const startIndex = (page - 1) * ITEMS_PER_PAGE;

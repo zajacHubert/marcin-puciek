@@ -6,7 +6,7 @@ import { advertisements } from '@/data/advertisements';
 import styles from '@/styles/video-page.module.css';
 
 interface SearchParams {
-  searchParams: {
+  searchParams?: {
     page?: string;
   };
 }
@@ -14,7 +14,7 @@ interface SearchParams {
 const ITEMS_PER_PAGE = 10;
 
 const AdvertisementsPage = ({ searchParams }: SearchParams) => {
-  const page = parseInt(searchParams.page ?? '1', 10);
+  const page = parseInt(searchParams?.page ?? '1', 10);
   const totalPages = Math.ceil(advertisements.length / ITEMS_PER_PAGE);
   const startIndex = (page - 1) * ITEMS_PER_PAGE;
   const endIndex = startIndex + ITEMS_PER_PAGE;
