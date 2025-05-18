@@ -16,10 +16,16 @@
   cursor: pointer;
   font-size: 0.875rem;
   transition: background-color 0.2s ease, color 0.2s ease;
+
+  /* Mobile touch fix */
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
 }
 
-.button:hover:not(:disabled) {
-  background-color: #e5e7eb;
+@media (hover: hover) {
+  .button:hover:not(:disabled) {
+    background-color: #e5e7eb;
+  }
 }
 
 .button:disabled {
