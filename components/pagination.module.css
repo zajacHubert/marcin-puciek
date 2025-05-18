@@ -17,12 +17,12 @@
   font-size: 0.875rem;
   transition: background-color 0.2s ease, color 0.2s ease;
 
-  /* Mobile touch fix */
+  /* Te dwie linijki poprawiają zachowanie na mobile */
   -webkit-tap-highlight-color: transparent;
   touch-action: manipulation;
 }
 
-@media (hover: hover) {
+@media (hover: hover) and (pointer: fine) {
   .button:hover:not(:disabled) {
     background-color: #e5e7eb;
   }
