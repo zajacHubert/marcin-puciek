@@ -18,12 +18,18 @@ import img24 from '@/public/images/portfolio/styling/img24.jpg';
 import img25 from '@/public/images/portfolio/styling/img25.jpg';
 import img26 from '@/public/images/portfolio/styling/img26.jpg';
 import img27 from '@/public/images/portfolio/styling/img27.jpg';
+import img28 from '@/public/images/portfolio/styling/img28.jpg';
+import img29 from '@/public/images/portfolio/styling/img29.jpg';
+import img30 from '@/public/images/portfolio/styling/img30.jpg';
 
 export const stylingImages: {
   id: number;
   img: StaticImageData;
   src: string;
 }[] = [
+  { id: 28, img: img28, src: img28.src },
+  { id: 29, img: img29, src: img29.src },
+  { id: 30, img: img30, src: img30.src },
   { id: 1, img: img1, src: img1.src },
   { id: 3, img: img3, src: img3.src },
   { id: 7, img: img7, src: img7.src },

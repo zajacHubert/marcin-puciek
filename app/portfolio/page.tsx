@@ -60,15 +60,6 @@ const PortfolioPage = () => {
       </div>
 
       <div className={styles.content}>
-        <Link href='/portfolio/pozostale'>
-          <div className={styles.categoryBox}>
-            <h2 className={styles.subtitle}>Pozostałe</h2>
-            <Image src={otherImg} alt='other category' />
-          </div>
-        </Link>
-      </div>
-
-      <div className={styles.content}>
         <Link href='/portfolio/robocze'>
           <div className={styles.categoryBox}>
             <h2 className={styles.subtitle}>Robocze</h2>
@@ -91,6 +82,15 @@ const PortfolioPage = () => {
           <div className={styles.categoryBox}>
             <h2 className={styles.subtitle}>Stylizacje</h2>
             <Image src={stylingImg} alt='styling category' />
+          </div>
+        </Link>
+      </div>
+
+      <div className={styles.content}>
+        <Link href='/portfolio/pozostale'>
+          <div className={styles.categoryBox}>
+            <h2 className={styles.subtitle}>Pozostałe</h2>
+            <Image src={otherImg} alt='other category' />
           </div>
         </Link>
       </div>

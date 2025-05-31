@@ -1,4 +1,5 @@
 export const advertisements: { id: string; type: 'YT' | 'CUSTOM' }[] = [
+  { id: '0ixUIzs19do', type: 'YT' },
   { id: 'OBwTsFm0t5Y', type: 'YT' },
   { id: '28qqi3pqDsU', type: 'YT' },
   { id: 'SuFQtC15Grw', type: 'YT' },
@@ -19,4 +20,8 @@ export const advertisements: { id: string; type: 'YT' | 'CUSTOM' }[] = [
   { id: 'k9Idqdzfnho', type: 'YT' },
   { id: '5DL1_xevYfI', type: 'YT' },
   { id: '6xNe3_DbWnU', type: 'YT' },
+  { id: '71Sp9xRNuPk', type: 'YT' },
+  { id: 'nU4-f65Kcok', type: 'YT' },
+  { id: 'DU36a_cFcgs', type: 'YT' },
+  { id: 'yT5c1g79VlY', type: 'YT' },
 ];
