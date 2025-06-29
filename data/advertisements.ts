@@ -24,4 +24,5 @@ export const advertisements: { id: string; type: 'YT' | 'CUSTOM' }[] = [
   { id: 'nU4-f65Kcok', type: 'YT' },
   { id: 'DU36a_cFcgs', type: 'YT' },
   { id: 'yT5c1g79VlY', type: 'YT' },
+  { id: '-lKOPY3-WcQ', type: 'YT' },
 ];

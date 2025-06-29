@@ -62,6 +62,9 @@ const Header = () => {
                 <Link href='/'>Start</Link>
               </li>
               <li>
+                <Link href='/polaroids'>Polaroids</Link>
+              </li>
+              <li>
                 <Link href='/portfolio'>Portfolio</Link>
               </li>
               <li
@@ -71,9 +74,8 @@ const Header = () => {
               >
                 <Link href='#'>Video</Link>
                 <ul
-                  className={`${styles.dropdownMenu} ${
-                    isDropdownOpen ? styles.dropdownVisible : ''
-                  }`}
+                  className={`${styles.dropdownMenu} ${isDropdownOpen ? styles.dropdownVisible : ''
+                    }`}
                 >
                   <li>
                     <Link href='/video/spoty'>Reklamy</Link>
@@ -101,6 +103,11 @@ const Header = () => {
               <li>
                 <Link href='/' onClick={closeMenuMobile}>
                   Start
+                </Link>
+              </li>
+              <li>
+                <Link href='/polaroids' onClick={closeMenuMobile}>
+                  Polaroids
                 </Link>
               </li>
               <li>
