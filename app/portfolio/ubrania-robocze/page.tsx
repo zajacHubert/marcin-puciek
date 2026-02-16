@@ -5,7 +5,7 @@ import styles from '@/styles/portfolio-category.module.css';
 const WorkCategoryPage = () => {
   return (
     <section className={styles.portfolioCategory}>
-      <h2 className={styles.title}>Robocze</h2>
+      <h2 className={styles.title}>ubrania robocze</h2>
       <Gallery images={workImages} />
     </section>
   );

@@ -60,9 +60,9 @@ const PortfolioPage = () => {
       </div>
 
       <div className={styles.content}>
-        <Link href='/portfolio/robocze'>
+        <Link href='/portfolio/ubrania-robocze'>
           <div className={styles.categoryBox}>
-            <h2 className={styles.subtitle}>Robocze</h2>
+            <h2 className={styles.subtitle}>ubrania robocze</h2>
             <Image src={workImg} alt='working category' />
           </div>
         </Link>
@@ -86,14 +86,7 @@ const PortfolioPage = () => {
         </Link>
       </div>
 
-      <div className={styles.content}>
-        <Link href='/portfolio/pozostale'>
-          <div className={styles.categoryBox}>
-            <h2 className={styles.subtitle}>Pozostałe</h2>
-            <Image src={otherImg} alt='other category' />
-          </div>
-        </Link>
-      </div>
+
     </section>
   );
 };
