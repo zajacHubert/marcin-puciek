@@ -1,5 +1,6 @@
 import Gallery from '@/components/Gallery';
 import { kampanieImages } from '@/data/kampanie';
+
 import styles from '@/styles/portfolio-category.module.css';
 
 const kampanieCategoryPage = () => {

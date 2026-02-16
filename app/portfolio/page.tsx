@@ -5,7 +5,7 @@ import underwearImg from '@/public/images/portfolio/underwear/img1.jpg';
 import kampanieImg from '@/public/images/portfolio/kampanie/img1.jpg';
 import elegantImg from '@/public/images/portfolio/elegant/img1.jpg';
 import lifestyleImg from '@/public/images/portfolio/lifestyle/img8.jpg';
-import lookbookImg from '@/public/images/portfolio/lookbook/img1.jpg';
+import eCommerceImg from '@/public/images/portfolio/e-commerce/img1.jpg';
 import otherImg from '@/public/images/portfolio/other/img1.jpg';
 import sportImg from '@/public/images/portfolio/sport/img6.jpg';
 import stylingImg from '@/public/images/portfolio/styling/img1.jpg';
@@ -51,10 +51,10 @@ const PortfolioPage = () => {
       </div>
 
       <div className={styles.content}>
-        <Link href='/portfolio/lookbook'>
+        <Link href='/portfolio/e-commerce'>
           <div className={styles.categoryBox}>
-            <h2 className={styles.subtitle}>Lookbook</h2>
-            <Image src={lookbookImg} alt='lookbook category' />
+            <h2 className={styles.subtitle}>e-commerce</h2>
+            <Image src={eCommerceImg} alt='e-commerce category' />
           </div>
         </Link>
       </div>
