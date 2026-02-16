@@ -3,7 +3,7 @@ import styles from '../../styles/portfolio-page.module.css';
 import Image from 'next/image';
 import underwearImg from '@/public/images/portfolio/underwear/img1.jpg';
 import kampanieImg from '@/public/images/portfolio/kampanie/img1.jpg';
-import elegantImg from '@/public/images/portfolio/elegant/img1.jpg';
+import elegantImg from '@/public/images/portfolio/elegant/img9.jpg';
 import lifestyleImg from '@/public/images/portfolio/lifestyle/img8.jpg';
 import eCommerceImg from '@/public/images/portfolio/e-commerce/img1.jpg';
 import sportImg from '@/public/images/portfolio/sport/img6.jpg';

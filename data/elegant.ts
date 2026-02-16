@@ -68,11 +68,7 @@ export const elegantImages: {
       img: img8,
       src: img8.src,
     },
-    {
-      id: 9,
-      img: img9,
-      src: img9.src,
-    },
+
     {
       id: 10,
       img: img10,
