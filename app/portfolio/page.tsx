@@ -33,9 +33,9 @@ const PortfolioPage = () => {
       </div>
 
       <div className={styles.content}>
-        <Link href='/portfolio/elegancko'>
+        <Link href='/portfolio/garnitury'>
           <div className={styles.categoryBox}>
-            <h2 className={styles.subtitle}>Elegancko</h2>
+            <h2 className={styles.subtitle}>garnitury</h2>
             <Image src={elegantImg} alt='elegant category' />
           </div>
         </Link>

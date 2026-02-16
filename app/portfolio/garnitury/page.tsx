@@ -5,7 +5,7 @@ import styles from '@/styles/portfolio-category.module.css';
 const ElegantCategoryPage = () => {
   return (
     <section className={styles.portfolioCategory}>
-      <h2 className={styles.title}>Elegancko</h2>
+      <h2 className={styles.title}>garnitury</h2>
       <Gallery images={elegantImages} />
     </section>
   );
