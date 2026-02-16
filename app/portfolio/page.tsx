@@ -6,7 +6,6 @@ import kampanieImg from '@/public/images/portfolio/kampanie/img1.jpg';
 import elegantImg from '@/public/images/portfolio/elegant/img1.jpg';
 import lifestyleImg from '@/public/images/portfolio/lifestyle/img8.jpg';
 import eCommerceImg from '@/public/images/portfolio/e-commerce/img1.jpg';
-import otherImg from '@/public/images/portfolio/other/img1.jpg';
 import sportImg from '@/public/images/portfolio/sport/img6.jpg';
 import stylingImg from '@/public/images/portfolio/styling/img1.jpg';
 import workImg from '@/public/images/portfolio/work/img1.jpg';
@@ -15,36 +14,9 @@ const PortfolioPage = () => {
   return (
     <section className={styles.portfolioContainer}>
       <div className={styles.content}>
-        <Link href='/portfolio/bielizna'>
-          <div className={styles.categoryBox}>
-            <h2 className={styles.subtitle}>Bielizna</h2>
-            <Image src={underwearImg} alt='underwear category' />
-          </div>
-        </Link>
-      </div>
-
-      <div className={styles.content}>
-        <Link href='/portfolio/kampanie'>
-          <div className={styles.categoryBox}>
-            <h2 className={styles.subtitle}>Kampanie</h2>
-            <Image src={kampanieImg} alt='kampanie category' />
-          </div>
-        </Link>
-      </div>
-
-      <div className={styles.content}>
-        <Link href='/portfolio/garnitury'>
-          <div className={styles.categoryBox}>
-            <h2 className={styles.subtitle}>garnitury</h2>
-            <Image src={elegantImg} alt='elegant category' />
-          </div>
-        </Link>
-      </div>
-
-      <div className={styles.content}>
         <Link href='/portfolio/lifestyle'>
           <div className={styles.categoryBox}>
-            <h2 className={styles.subtitle}>Lifestyle</h2>
+            <h2 className={styles.subtitle}>lifestyle</h2>
             <Image src={lifestyleImg} alt='lifestyle category' />
           </div>
         </Link>
@@ -60,6 +32,44 @@ const PortfolioPage = () => {
       </div>
 
       <div className={styles.content}>
+        <Link href='/portfolio/kampanie'>
+          <div className={styles.categoryBox}>
+            <h2 className={styles.subtitle}>kampanie</h2>
+            <Image src={kampanieImg} alt='kampanie category' />
+          </div>
+        </Link>
+      </div>
+
+      <div className={styles.content}>
+        <Link href='/portfolio/bielizna'>
+          <div className={styles.categoryBox}>
+            <h2 className={styles.subtitle}>bielizna</h2>
+            <Image src={underwearImg} alt='underwear category' />
+          </div>
+        </Link>
+      </div>
+
+
+
+      <div className={styles.content}>
+        <Link href='/portfolio/garnitury'>
+          <div className={styles.categoryBox}>
+            <h2 className={styles.subtitle}>garnitury</h2>
+            <Image src={elegantImg} alt='elegant category' />
+          </div>
+        </Link>
+      </div>
+
+      <div className={styles.content}>
+        <Link href='/portfolio/sport-i-turystyka'>
+          <div className={styles.categoryBox}>
+            <h2 className={styles.subtitle}>sport i turystyka</h2>
+            <Image src={sportImg} alt='sport category' />
+          </div>
+        </Link>
+      </div>
+
+      <div className={styles.content}>
         <Link href='/portfolio/ubrania-robocze'>
           <div className={styles.categoryBox}>
             <h2 className={styles.subtitle}>ubrania robocze</h2>
@@ -68,19 +78,12 @@ const PortfolioPage = () => {
         </Link>
       </div>
 
-      <div className={styles.content}>
-        <Link href='/portfolio/sport-i-turystyka'>
-          <div className={styles.categoryBox}>
-            <h2 className={styles.subtitle}>Sport i turystyka</h2>
-            <Image src={sportImg} alt='sport category' />
-          </div>
-        </Link>
-      </div>
+
 
       <div className={styles.content}>
         <Link href='/portfolio/stylizacje'>
           <div className={styles.categoryBox}>
-            <h2 className={styles.subtitle}>Stylizacje</h2>
+            <h2 className={styles.subtitle}>stylizacje</h2>
             <Image src={stylingImg} alt='styling category' />
           </div>
         </Link>

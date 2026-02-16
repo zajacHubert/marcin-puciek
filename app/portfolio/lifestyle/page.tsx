@@ -5,7 +5,7 @@ import styles from '@/styles/portfolio-category.module.css';
 const LifestyleCategoryPage = () => {
   return (
     <section className={styles.portfolioCategory}>
-      <h2 className={styles.title}>Lifestyle</h2>
+      <h2 className={styles.title}>lifestyle</h2>
       <Gallery images={lifestyleImages} />
     </section>
   );

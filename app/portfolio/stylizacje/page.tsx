@@ -5,7 +5,7 @@ import styles from '@/styles/portfolio-category.module.css';
 const StylingCategoryPage = () => {
   return (
     <section className={styles.portfolioCategory}>
-      <h2 className={styles.title}>Stylizacje</h2>
+      <h2 className={styles.title}>stylizacje</h2>
       <Gallery images={stylingImages} />
     </section>
   );
