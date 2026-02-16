@@ -2,7 +2,7 @@ import Link from 'next/link';
 import styles from '../../styles/portfolio-page.module.css';
 import Image from 'next/image';
 import underwearImg from '@/public/images/portfolio/underwear/img1.jpg';
-import commerceImg from '@/public/images/portfolio/commerce/img1.jpg';
+import kampanieImg from '@/public/images/portfolio/kampanie/img1.jpg';
 import elegantImg from '@/public/images/portfolio/elegant/img1.jpg';
 import lifestyleImg from '@/public/images/portfolio/lifestyle/img8.jpg';
 import lookbookImg from '@/public/images/portfolio/lookbook/img1.jpg';
@@ -24,10 +24,10 @@ const PortfolioPage = () => {
       </div>
 
       <div className={styles.content}>
-        <Link href='/portfolio/commerce'>
+        <Link href='/portfolio/kampanie'>
           <div className={styles.categoryBox}>
-            <h2 className={styles.subtitle}>Commerce</h2>
-            <Image src={commerceImg} alt='commerce category' />
+            <h2 className={styles.subtitle}>Kampanie</h2>
+            <Image src={kampanieImg} alt='kampanie category' />
           </div>
         </Link>
       </div>
